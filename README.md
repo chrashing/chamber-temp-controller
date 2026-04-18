@@ -68,7 +68,9 @@ Fan restored to saved user speed
 
 ### 1. Add the macros to your Klipper config
 Insert both macro blocks into your printer’s `.cfg` files:
+
 [delayed_gcode CHAMBER_TEMP_CONTROLLER]
+
 [delayed_gcode CHAMBER_TEMP_CONTROLLER_LOOP]
 
 ### 2. Ensure required config sections exist
@@ -78,26 +80,33 @@ Attributes That May Need Adjustment:
 Code was developed on QIDI Xmax 3 with so the following may need adjustment.
 
 Chamber Fan
-Current: fan_generic filterfan  
-Alternatives:
-fan_generic chamber_fan
-fan_generic exhaust_fan
-fan_generic nevermore
-fan_generic aux_fan
-or other.
 
-Chamber Heater / Sensor
+Current: fan_generic filterfan:  
+Alternatives:
+fan_generic chamber_fan ,
+fan_generic exhaust_fan ,
+fan_generic nevermore ,
+fan_generic aux_fan ,
+  or other.
+
+Chamber Heater / Sensor:
+
 Current: heater_generic chamber  
 Alternatives:
-heater_generic chamber_heater
-heater_generic enclosure
-temperature_sensor chamber
-temperature_sensor enclosure
-or other
+heater_generic chamber_heater ,
+heater_generic enclosure ,
+temperature_sensor chamber ,
+temperature_sensor enclosure ,
+or other.
 
 Fan Minimum Power Attribute:
-Current: off_below               Alternatives:  'min_power' or others  
-Current 'fan_generic filterfan'  Alternative:  'heater_generic chamber' or others.
+
+Current: off_below               
+Alternatives:  min_power , or other.
+
+Config Section Names:
+
+Current: 'fan_generic filterfan'  and  'heater_generic chamber'  Must match whatever the user names those sections in their own config.
 
 #### `fan_generic filterfan`
 - Must include `speed` and `off_below`
