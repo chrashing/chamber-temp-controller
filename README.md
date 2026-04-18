@@ -101,8 +101,7 @@ or other.
 
 Fan Minimum Power Attribute:
 
-Current: off_below               
-Alternatives:  min_power , or other.
+Current: off_below .               
 
 Config Section Names:
 
