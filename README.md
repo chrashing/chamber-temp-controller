@@ -74,6 +74,7 @@ Insert both macro blocks into your printer’s `.cfg` files:
 ### 2. Ensure required config sections exist
 
 Attributes That May Need Adjustment:
+
 Code was developed on QIDI Xmax 3 with so the following may need adjustment.
 
 Chamber Fan
@@ -94,7 +95,7 @@ temperature_sensor chamber
 temperature_sensor enclosure
 or other
 
-3. Fan Minimum Power Attribute:
+Fan Minimum Power Attribute:
 Current: off_below               Alternatives:  'min_power' or others  
 Current 'fan_generic filterfan'  Alternative:  'heater_generic chamber' or others.
 
@@ -115,8 +116,6 @@ CTC runs only during:
 - `"printing"`
 - `"paused"`
 - (Optional) `"standby"` — add to the list in the loop macro
-
-Idle when not printing.
 
 ---
 
