@@ -6,6 +6,8 @@ CTC monitors chamber temperature in the background and dynamically boosts the fi
 
 Code devloped on a QIDi Xmax 3 running freeDi Firmware. 
 
+This CTC funtion is built on code developed by Phil1988 for freeDi firmware developement. Site  https://github.com/Phil1988/FreeDi  
+
 ---
 
 ## ✨ Features
